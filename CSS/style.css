@@ -653,6 +653,7 @@ input[type=radio] {
     border: 2px solid white;
 }
 
+
 /* version 4 */
 .index4 #banner:after {
     position: absolute;
@@ -663,4 +664,112 @@ input[type=radio] {
     height: 100%;
     background: rgba(25, 25, 25, .94);
 
+}
+
+/* inner pages css */
+.inner-page #inner-banner {
+    padding: 150px 0;
+    background: #191919;
+}
+
+.inner-page #inner-banner h3 {
+    font-size: 52px;
+    font-family: bb;
+    color: white;
+    padding-bottom: 18px;
+}
+
+.inner-page #inner-banner a {
+    color: #e50914;
+    font-family: bb;
+    font-size: 19px;
+}
+
+.inner-page #inner-banner span {
+    color: #787878;
+    font-family: br;
+    font-size: 19px;
+}
+
+.inner-page #cart-view {
+    padding: 80px 0 15px;
+}
+
+.inner-page .cart-items {
+    background: #191919;
+    padding: 30px 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inner-page .cart-items h3 {
+    font-size: 38px;
+    color: white;
+    font-family: bb;
+}
+
+.inner-page .cart-items h4 {
+    font-size: 25px;
+    font-family: br;
+    color: #787878;
+    text-transform: capitalize;
+    padding: 12px 0 12px;
+}
+
+.inner-page .cart-items a i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: #e50914;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inner-page .coupon-btn {
+    height: 59px;
+    width: 100%;
+    font-size: 19px;
+    font-family: bb;
+    background: #e50914;
+    border: 1px solid #e50914;
+    margin-top: 15px;
+}
+
+.inner-page .coupon-btn:hover {
+    background: #bf000a;
+    border: 1px solid #bf000a;
+}
+
+.inner-page .checkout-box {
+    background: #191919;
+    padding: 40px;
+    margin-bottom: 15px;
+}
+
+.inner-page .checkout-item {
+    margin-bottom: 25px;
+}
+
+.inner-page .checkout-box h3,
+.inner-page .checkout-box h4 {
+    font-size: 21px;
+    font-family: br;
+}
+
+.inner-page .checkout-box h3 {
+    color: #787878;
+}
+
+.inner-page .checkout-box h4 {
+    color: white;
+}
+
+.inner-page .checkout-button {
+    margin-top: 25px;
+}
+
+.btn-c-white {
+    color: white !important;
 }
