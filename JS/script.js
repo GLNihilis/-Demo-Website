@@ -258,3 +258,82 @@
 
   ]
     });
+
+    // preloader
+    $(window).on('load', function () {
+        $('.preloader').delay(1000).fadeOut(1000);
+
+    });
+    // Closes responsive menu when a scroll link is clicked
+    $('.menu-link, .abc, .cart').on('click', function () {
+        $('.custom-menubar').slideUp(600);
+    });
+    //animation scroll js
+    var html_body = $('html, body');
+    $('.navbar a , .backtotop a').on('click', function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name="' + this.hash.slice(1) + '"]');
+            if (target.length) {
+                html_body.animate({
+                    scrollTop: target.offset().top - 65
+                }, 1500);
+                return false;
+            }
+        }
+    });
+
+    // smooth scroll js 
+    $(window).scroll(function () {
+        var scrolling = $(this).scrollTop();
+        var stikey = $('.sticky-top');
+
+        if (scrolling >= 100) {
+
+            $(stikey).addClass("nav-bg");
+
+        } else {
+
+            $(stikey).removeClass("nav-bg");
+        }
+        if (scrolling > 180) {
+            $('.backtotop').fadeIn(500);
+        } else {
+            $('.backtotop').fadeOut(500);
+        }
+    });
+    //scorllspy js
+    $('body').scrollspy({
+        target: ".navbar",
+        offset: 70,
+    });
+    // Search Form js
+    $('.abc').on('click', function (event) {
+        event.preventDefault();
+        $('.search').addClass('open');
+        $('.search > form > input[type="search"]').focus();
+    });
+    $('.search, .search button.close').on('click keyup', function (event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    $('.fix-close').on('click', function () {
+        $('.top-search').removeClass('open');
+    });
+
+    //menu part js
+    $('.menu-icon').on('click', function () {
+        $('.custom-menubar').slideDown(600);
+    });
+    $('.hide-menu-btn').on('click', function () {
+        $('.custom-menubar').slideUp(600);
+    });
+    //lightbox js
+    $('.venobox').venobox();
+    // counter part js
+    $('.counter').counterUp();
+    // video player js
+    jQuery("#bgndVideo").YTPlayer();
+    
+}(jQuery));
