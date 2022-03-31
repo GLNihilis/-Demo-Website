@@ -1868,3 +1868,114 @@ input[type=radio] {
 .player-item:hover .player-lightbox a i {
     opacity: 1;
 }
+
+/*===========================
+10.0 *** PRODUCT AREA START ***
+=============================*/
+#product {
+    padding: 80px 0;
+    position: relative;
+}
+
+.product-pa {
+    padding-top: 70px;
+}
+
+.product-item {
+    background: #191919;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.product-item h3 {
+    font-size: 40px;
+    font-family: bb;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.product-item h4 {
+    font-size: 25px;
+    font-family: br;
+    color: #787878;
+    text-transform: capitalize;
+    padding: 12px 0 12px;
+}
+
+.product-btn {
+    color: #e50914;
+    font-family: bb;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+
+.product-btn:hover {
+    color: #e50914;
+}
+
+.sale {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #e50914;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 45px;
+    top: 135px;
+}
+
+.sale span {
+    font-family: bb;
+    color: white;
+    font-size: 18px;
+}
+
+/*===========================
+11.0 *** JOIN AREA START ***
+=============================*/
+#join {
+    padding: 40px 0;
+}
+
+.join-bg {
+    background: #191919;
+    padding: 70px 60px;
+    border-radius: 8px;
+    margin: 40px 0 0;
+    position: relative;
+}
+
+.join-pa {
+    padding-top: 65px;
+}
+
+.join-txt span {
+    font-size: 18px;
+    font-family: br;
+    color: #e50914;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.join-txt h3 {
+    font-size: 38px;
+    font-family: bb;
+    color: white;
+    text-transform: uppercase;
+    line-height: 52px;
+    padding: 5px 0 18px;
+}
+
+.join-txt p {
+    font-family: br;
+    font-size: 19px;
+    color: #787878;
+    padding-bottom: 48px;
+}
+
+.join-img img {
+    position: absolute;
+    bottom: -70px;
+}
