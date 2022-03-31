@@ -1,0 +1,26 @@
+body {
+    background-color: #eeeeee;
+}
+
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin-right: 350px;
+    margin-left: 20px;
+    padding-right: 30px;
+}
+
+
+span[onclick] {
+    cursor: pointer;
+    color: #000;
+}
+
+.table {
+    margin-left: 260px;
+    margin-right: 500px;
+    padding: 20px;
+}

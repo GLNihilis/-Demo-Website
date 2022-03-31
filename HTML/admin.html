@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edit-admin.css">
+    <link rel="stylesheet" href="css/boostrap.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <h3 class="logo-name">
+                    Dashwork
+                </h3>
+            </div>
+                <div class="btn-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+        </div>
+
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+              <a href="#page-top">
+                <i class="fa-solid fa-user"></i>
+                <span>Admin</span>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Staff</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <h1 class="text-center">Admin page</h1>
+        <from onsubmit="creat_user()" name="userFrom">
+            <div class="from-group">
+                <input type="text" class="from-control" name="id" autocomplete="off" placeholder="Id"> <!-- autocomplete là thuộc tính cho phép gợi ý thông tin nhập trước đó !--> <!-- disabled dùng để vô hiệu hoá giá trị nhập !-->
+                <input type="text" class="from-control" name="userName" placeholder="userName" autocomplete="off" > <!-- placeholder là thuộc tính gợi ý ngắn cho các hoạt động như email văn bản,...-->
+                <input type="text" class="form-control" name="password" placeholder="password" autocomplete="off">
+                <div class="justify-content-center">
+                    <button class="btn-success" type="submit" id="creat">Add</button>
+                    <button class="btn-into" type="button" id="read" onclick="read_data()">Read</button>
+                    <button class="btn-warning" type="button" id="update" onclick="update_user()">Update</button>
+                    <button class="btn-danger" type="delete" onclick="delete_all()">Delete</button>
+                </div>
+            </div>
+        </from>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <span onclick="edit_user(this)">
+                        <i class="fas fa-edit" aria-hidden="true"></i></td>
+                        <span></span>
+                    </sapn>
+                <td>
+                    <span onclick="delete_user(this)">
+                        <i class="fas fa-trash" aria-hidden="true"></i>
+                        <span></span>
+                    </span>
+                </td>
+            </tr>
+            " "
+        </tbody>
+    </table>
+
+    <script src="js.javascript.js"></script>
+    <script src="js/text.js"></script>
+</body>
+</html>
