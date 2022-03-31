@@ -2094,3 +2094,108 @@ input[type=radio] {
     top: 39px;
     text-transform: uppercase;
 }
+
+/*===========================
+14.0 *** FOOTER AREA START ***
+=============================*/
+#footer {
+    padding: 80px 0;
+    background: #191919;
+}
+
+.footer-logo a {
+    font-size: 34px;
+    font-family: bb;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.footer-logo a b {
+    color: #e50914;
+}
+
+.footer-logo p {
+    font-family: br;
+    font-size: 19px;
+    color: #787878;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+.footer-menu h3 {
+    font-size: 24px;
+    font-family: bb;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.footer-menu a {
+    display: block;
+    font-size: 19px;
+    font-family: br;
+    color: #787878;
+    margin-top: 15px;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.footer-menu a:hover {
+    padding-left: 4px;
+    color: #e50914;
+}
+
+.footer-social a i {
+    font-size: 16px;
+    color: white;
+    background: #262525;
+    width: 45px;
+    height: 45px;
+    line-height: 46px;
+    margin-right: 16px;
+    border-radius: 50%;
+    text-align: center;
+    padding-left: 8px;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.footer-social a i:hover {
+    background: #e50914;
+}
+
+/*===========================
+15.0 *** COPY_RIGHT AREA START ***
+=============================*/
+#copy_right {
+    padding: 25px 0;
+    background: #191919;
+    position: relative;
+}
+
+#copy_right::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 1112px;
+    height: 1px;
+    background: #313131;
+}
+
+.copy-right-txt p {
+    font-family: br;
+    color: #787878;
+    font-size: 19px;
+}
+
+.copy-right-txt p a {
+    font-family: bb;
+    color: white;
+}

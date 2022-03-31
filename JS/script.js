@@ -1,0 +1,53 @@
+(function ($) {
+
+    "use strict";
+
+    //banner part js
+    $('.banner-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        arrows: true,
+        nextArrow: '.arrow-ar',
+        prevArrow: '.arrow-al',
+        autoplaySpeed: 3000,
+        infinite: true,
+        speed: 400,
+        fade: true,
+        cssEase: 'linear',
+    });
+
+    //game part js
+    $('.game-main').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        autoplaySpeed: 2500,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+    },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+    },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+    },
+
+    ]
+    });
