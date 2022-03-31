@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
 </head>
 <body>
     <!--All-->                      <!--     B     -->
-    <head class="all" id="container-all" style="background-color: black;color: white;">
+    <div class="all" id="container-all" style="background-color: black;color: white;">
 
         <!--Preloader-->    <!--1-->                                    <!-- Cần tìm hiểu thêm về svg-->
         <div class="loader-screen" id="preloader">
@@ -43,7 +43,7 @@
         </div>
 
         <!--**************Header Area**************-->
-        <body class="web-header" id="container-header">
+        <div class="web-header" id="container-header">
 
             <!--Logo-->
             <div class="header-logo">
@@ -94,6 +94,7 @@
                     </li>
                 </ul>
             </div>
+
             <!--Custom Shopping Bag Modal-->    <!--2-->
             <div class="modal fade" id="header-shopping-bag-modal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="headershopping-bag-modal-center" role="document">
@@ -138,36 +139,80 @@
 
                     </div>
                 </div>
-            </div>    
-    <!--Custom Menubar-->   <!--3-->                           <!-- Cần chỉnh sửa chỗ |href| !!! -->
-    <div class="header-menubar">
-        <ul class="menubar-list">
+            </div>
 
-            <!--Menu Home-->
-            <li class="header-menubar-item">
-                <a href="" class="header-menubar-item-link">HOME</a>
-            </li>
+            <!--Custom Menubar-->   <!--3-->                           <!-- Cần chỉnh sửa chỗ |href| !!! -->
+            <div class="header-menubar">
+                <ul class="menubar-list">
 
-            <!--Menu About Us-->
-            <li class="header-menubar-item">
-                <a href="" class="header-menubar-item-link">ABOUT US</a>
-            </li>
+                    <!--Menu Home-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">HOME</a>
+                    </li>
 
-            <!--Menu Matches-->
-            <li class="header-menubar-item">
-                <a href="" class="header-menubar-item-link">MATCHES</a>
-            </li>
+                    <!--Menu About Us-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">ABOUT US</a>
+                    </li>
 
-            <!--Menu Contacts-->
-            <li class="header-menubar-item">
-                <a href="" class="header-menubar-item-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
-            </li>
+                    <!--Menu Matches-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">MATCHES</a>
+                    </li>
 
-            <!--Menu Blogs-->
-            <li class="header-menubar-item">
-                <a href="" class="header-menubar-item-link">BLOGS</a>
-            </li>
-        </ul>
-    </div>
-</body>
-</head>  
+                    <!--Menu Contacts-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
+                    </li>
+
+                    <!--Menu Blogs-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">BLOGS</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--Custom Menubar Contact-->   <!--4-->
+            <div class="modal fade" id="header-contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="header-contact-modal-center" role="document">
+                    <div class="header-contact-modal-content">
+                        <form action="">
+
+                            <!--Contact Modal Header-->
+                            <div class="header-contact-modal-header">
+                                <h5 class="header-contact-modal-title">Contact <b>.</b></h5>
+                                <button type="close" class="btn-contact-close" data-dismiss="modal" aria-label=Close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <!--Contact Modal Body-->
+                            <div class="header-contact-modal-body">
+                                <div class="header-contact-modal-box">
+                                    <div class="header-contact-modal-box-item">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Your Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="header-contact-modal-box-item">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="header-contact-modal-box-item">
+                                        <div class="form-group">
+                                            <textarea name="" class="form-control" id="Example_Form_Control_Text_Area" cols="30" rows="7" placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Contact Modal Footer-->
+                            <div class="header-contact-modal-footer">
+                                <button type="submit" class="main-btn">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
