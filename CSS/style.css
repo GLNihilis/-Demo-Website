@@ -1517,3 +1517,159 @@ input[type=radio] {
     font-family: br;
     color: white;
 }
+
+/*===========================
+5.0 *** COUNTER AREA START ***
+=============================*/
+#counter {
+    padding: 45px 0;
+}
+
+.counter-item {
+    padding: 40px 0;
+    background: #191919;
+}
+
+.counter-item i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 3px solid #e50914;
+    color: #e50914;
+    border-radius: 50%;
+    font-size: 29px;
+}
+
+.counter-item h3 {
+    font-size: 50px;
+    font-family: bb;
+    color: white;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.counter-item span {
+    font-size: 50px;
+    font-family: bb;
+    color: white;
+}
+
+.counter-item span b {
+    color: #e50914;
+}
+
+.counter-item p {
+    font-family: br;
+    font-size: 19px;
+    color: #787878;
+}
+
+/*===========================
+6.0 *** MATCH AREA START ***
+=============================*/
+#match {
+    padding: 80px 0;
+    position: relative;
+}
+
+.match-pa {
+    padding-top: 65px;
+}
+
+.match-logo {
+    padding-bottom: 40px;
+}
+
+.live-match-item {
+    background: #191919;
+    padding: 30px;
+    border-radius: 12px;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.live-match-item:hover {
+    background: #e50914;
+}
+
+.live-match-item:hover h3,
+.live-match-item:hover p,
+.live-match-item:hover a,
+.live-match-item:hover a i {
+    color: white;
+}
+
+.match-text h3 {
+    font-size: 25px;
+    font-family: bb;
+    color: #fff;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.lose h3 {
+    color: #787878;
+}
+
+.live-match-item .match-text {
+    margin-top: 24px;
+}
+
+.match-btn {
+    font-family: bb;
+    color: #e50914;
+    text-transform: uppercase;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.match-btn i {
+    font-size: 9px;
+    color: #e50914;
+    padding-left: 3px;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.match-action {
+    padding-top: 40px;
+}
+
+.pre-match {
+    margin-top: 90px;
+}
+
+.pre-match h3 {
+    font-size: 22px;
+    font-family: br;
+    color: #787878;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    position: relative;
+}
+
+.match-pa2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.match-item {
+    background: #191919;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.match-item img {
+    width: 88px;
+}
+
+.vs-txt h3 {
+    font-size: 35px;
+    font-family: bb;
+    color: white;
+    padding-top: 24px;
+}
