@@ -1,0 +1,194 @@
+/* START */
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+#darkmode
+{
+    background: #141414;
+}
+
+ul,
+ol
+{
+    list-style-type: none;
+}
+
+a,
+a:focus,
+a:hover
+{
+    text-decoration: none;
+    outline: 0;
+}
+
+img
+{
+    overflow: hidden;
+    border: 0;
+    vertical-align: middle;
+}
+
+.zindex
+{
+    position: relative;
+    z-index: 999;
+}
+
+.clr
+{
+    clear: both;
+}
+
+.vbox-overlay
+{
+    z-index: 999999;
+}
+
+.lightboxOverlay
+{
+    z-index: 999999;
+}
+
+.lightbox
+{
+    z-index: 9999999;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol
+{
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    line-height: 27px;
+}
+
+@font-face
+{
+    src: url(../fonts/BarlowCondensed-Bold.ttf);
+    font-family: bb;
+}
+
+@font-face
+{
+    src: url(../fonts/BarlowCondensed-Regular.ttf);
+    font-family: br;
+}
+
+
+/* Preloader */
+.preloader
+{
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #191919;
+    z-index: 999999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.loader-box
+{
+    color: #e50914;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.loader-box svg
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.loader-box svg rect
+{
+    fill: none;
+    stroke: #e50914;
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.loader-box svg rect
+{
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+@-webkit-keyframes pathRect
+{
+    25% {
+        stroke-dashoffset: 64;
+    }
+
+    50% {
+        stroke-dashoffset: 128;
+    }
+
+    75% {
+        stroke-dashoffset: 192;
+    }
+
+    100% {
+        stroke-dashoffset: 256;
+    }
+}
+
+@keyframes pathRect
+{
+    25% {
+        stroke-dashoffset: 64;
+    }
+
+    50% {
+        stroke-dashoffset: 128;
+    }
+
+    75% {
+        stroke-dashoffset: 192;
+    }
+
+    100% {
+        stroke-dashoffset: 256;
+    }
+}
+
