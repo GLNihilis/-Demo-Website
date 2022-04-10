@@ -277,7 +277,7 @@
         },]
     });
 
-    // review slide js part
+    // Review Slide JS Part
     $('.review-img-main').slick(
     {
         slidesToShow: 1,
@@ -356,4 +356,5 @@
 
     // Video Player JS
     jQuery("#bgndVideo").YTPlayer();
-})
+
+}(jQuery));
