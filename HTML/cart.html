@@ -25,7 +25,9 @@
 
         <!--Preloader-->                                    <!-- Cần tìm hiểu thêm về svg-->
         <div class="loader-screen" id="preloader">
-            <!--//////////////-->
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
         </div>
 
         <!--**************Header Area**************-->
@@ -81,6 +83,37 @@
                 </ul>
             </div>
 
+            <!--Custom Menubar-->                           <!-- Cần chỉnh sửa chỗ |href| !!! -->
+            <div class="header-menubar">
+                <ul class="menubar-list">
+
+                    <!--Menu Home-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">HOME</a>
+                    </li>
+
+                    <!--Menu About Us-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">ABOUT US</a>
+                    </li>
+
+                    <!--Menu Matches-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">MATCHES</a>
+                    </li>
+
+                    <!--Menu Contacts-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
+                    </li>
+
+                    <!--Menu Blogs-->
+                    <li class="header-menubar-item">
+                        <a href="" class="header-menubar-item-link">BLOGS</a>
+                    </li>
+                </ul>
+            </div>
+
             <!--Custom Shopping Bag Modal-->
             <div class="modal fade" id="header-shopping-bag-modal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="headershopping-bag-modal-center" role="document">
@@ -127,38 +160,7 @@
                 </div>
             </div>
 
-            <!--Custom Menubar-->                           <!-- Cần chỉnh sửa chỗ |href| !!! -->
-            <div class="header-menubar">
-                <ul class="menubar-list">
-
-                    <!--Menu Home-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">HOME</a>
-                    </li>
-
-                    <!--Menu About Us-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">ABOUT US</a>
-                    </li>
-
-                    <!--Menu Matches-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">MATCHES</a>
-                    </li>
-
-                    <!--Menu Contacts-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
-                    </li>
-
-                    <!--Menu Blogs-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">BLOGS</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--Custom Menubar Contact-->
+            <!--Custom Menubar Contact Modal-->
             <div class="modal fade" id="header-contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="header-contact-modal-center" role="document">
                     <div class="header-contact-modal-content">
