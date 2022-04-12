@@ -6,6 +6,12 @@
         $('.preloader').delay(1000).fadeOut(1000);
     });
 
+    // Closes Responsive Menu When A Scroll Link Is Clicked
+    $('.menu-link, .abc, .cart').on('click', function ()
+    {
+        $('.custom-menubar').slideUp(600);
+    });
+
     // Animation Scroll JS
     var html_body = $('html, body');
     $('.navbar a , .backtotop a').on('click', function ()
