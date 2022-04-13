@@ -17,97 +17,151 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/HomeWork/BTL/CSS/index.css">
+    <link rel="stylesheet" href="/BTL/CSS/index.css">
 
     <!-- Ghi chú
     $times;
-    preloader
-    img-fluid
-    vid-fluid
     main-btn
     -->
 </head>
-<body>
+<body id="darkmode">
     <!--All-->
-    <div class="all" id="container-all" style="background-color: black;color: white;">
+    <div class="all" id="container-all">
 
         <!--Preloader-->
-        <div class="loader-screen" id="preloader">
-            <svg viewBox="0 0 80 80">
-                <rect x="8" y="8" width="64" height="64"></rect>
-            </svg>
+        <div class="loader-screen preloader" id="preloader">
+            <div class="loader-box">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
+                </svg>
+            </div>
         </div>
 
         <!--**************Header Area**************-->
         <div class="web-header" id="container-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+                <div class="header-container container">
 
-            <!--Logo-->
-            <div class="header-logo">
-                <a href="index.html" class="header-logo-link">GAMIX
-                    <span>.</span>
-                </a>
-            </div>
+                    <!--Logo-->
+                    <a href="index.html" class="header-logo-link navbar-brand">GAMIX<span>.</span></a>
 
-            <!--Navigation-->
-            <div class="header-nav">
-                <ul class="header-nav-list">
+                    <!--Navigation-->
+                    <div class="header-nav">
+                        <ul class="header-nav-list navbar-nav">
 
-                    <!--Search-->                                   <!-- !!! -->
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link-search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                        <div class="menu-search">
-                            <button type="button" class="btn-search-close">x</button>
-                            <form action="">
-                                <input type="search" placeholder="Search Here" value=""/>
-                                <button type="submit" class="main-btn">Search</button>
-                            </form>
-                        </div>
-                    </li>
+                            <!--Search-->                                   <!-- !!! -->
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link-search nav-link abc nl-m-top">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                                <div class="search top-search">
+                                    <button type="button" class="close fix-close">x</button>
+                                    <form action="">
+                                        <input type="search" placeholder="Search Here" value=""/>
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </li>
 
-                    <!--Shopping Bag-->
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link-shopping-bag" data-toggle="modal" data-target="#header-shopping-bag-modal">
-                            <i class="fas fa-shopping-bag" aria-hidden="true">
-                                <span>2</span>
-                            </i>
-                        </a>
-                    </li>
+                            <!--Shopping Bag-->
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link-shopping-bag nav-link cart nl-m-top" data-toggle="modal" data-target="#header-shopping-bag-modal">
+                                    <i class="fas fa-shopping-bag" aria-hidden="true">
+                                        <span>2</span>
+                                    </i>
+                                </a>
+                            </li>
 
-                    <!--Login-->
-                    <li class="header-nav-item">
-                        <a href="login.html" class="header-nav-item-link-login">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </a>
-                    </li>
+                            <!--Login-->
+                            <li class="header-nav-item">
+                                <a href="login.html" class="header-nav-item-link-login nav-link nl-m-top">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                </a>
+                            </li>
 
-                    <!--Menu-->
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link-menu">
-                            <i class="fas fa-bars" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                            <!--Menu-->
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link-menu nav-link menu-icon">
+                                    <i class="fas fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+                <!--Custom Menubar-->
+                <div class="header-menubar custom-menubar">
+                    <ul class="menubar-list">
+
+                        <!--Menu Home-->
+                        <li class="header-menubar-item">
+                            <a href="#banner" class="header-menubar-item-link menu-link">HOME</a>
+                        </li>
+
+                        <!--Menu About Us-->
+                        <li class="header-menubar-item">
+                            <a href="#about" class="header-menubar-item-link menu-link">ABOUT US</a>
+                        </li>
+
+                        <!--Menu Matches-->
+                        <li class="header-menubar-item">
+                            <a href="#match" class="header-menubar-item-link menu-link">MATCHES</a>
+                        </li>
+
+                        <!--Menu Contacts-->
+                        <li class="header-menubar-item">
+                            <a href="#" class="header-menubar-item-link menu-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
+                        </li>
+
+                        <!--Menu Blogs-->
+                        <li class="header-menubar-item">
+                            <a href="#blog" class="header-menubar-item-link menu-link">BLOGS</a>
+                        </li>
+                    </ul>
+
+                    <!--Responsive Navigation-->
+                    <ul class="responsive-nav">
+                        <li>
+                            <a class="nav-link nl-m-top abc"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <div class="search top-search">
+                                <button type="button" class="close fix-close">×</button>
+                                <form>
+                                    <input type="search" value="" placeholder="Search Here" />
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link cart nl-m-top" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-shopping-bag" aria-hidden="true"></i><span>2</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link nl-m-top" href="login.html"><i class="fas fa-user" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="menu-close">
+                        <a class="hide-menu-btn"><i class="fas fa-times" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </nav>
 
             <!--Custom Shopping Bag Modal-->
             <div class="modal fade" id="header-shopping-bag-modal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="headershopping-bag-modal-center" role="document">
-                    <div class="header-shopping-bag-modal-content">
+                    <div class="header-shopping-bag-modal-content modal-content">
 
                         <!--Shopping Bag Modal Header-->
-                        <div class="header-shopping-bag-modal-header">
-                            <h5 class="header-shopping-bag-modal-title">Cart<b>.</b></h5>
-                            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                        <div class="header-shopping-bag-modal-header modal-header modal-header">
+                            <h5 class="header-shopping-bag-modal-title modal-title">Cart<b>.</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
 
                         <!--Shopping Bag Modal Body-->
-                        <div class="header-shopping-bag-modal-body">
-                            <div class="header-shopping-bag-modal-cart">
-                                <div class="header-shopping-bag-modal-cart-item">
+                        <div class="header-shopping-bag-modal-body modal-body">
+                            <div class="header-shopping-bag-modal-cart cart-item">
+                                <div class="header-shopping-bag-modal-cart-item cart-img">
                                     <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
                                     <a href="#"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></a>
                                 </div>
@@ -116,8 +170,8 @@
                                     <span>1 x $135</span>
                                 </div>
                             </div>
-                            <div class="header-shopping-bag-modal-cart">
-                                <div class="header-shopping-bag-modal-cart-item">
+                            <div class="header-shopping-bag-modal-cart cart-item">
+                                <div class="header-shopping-bag-modal-cart-item cart-img">
                                     <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product3.png" alt="" class="img-fluid">
                                     <a href="#"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></a>
                                 </div>
@@ -129,62 +183,31 @@
                         </div>
 
                         <!--Shopping Bag Modal Footer-->
-                        <div class="header-shopping-bag-modal-footer">
-                            <a href="cart.html" class="main-btn">Checkout $320</a>
+                        <div class="header-shopping-bag-modal-footer modal-footer">
+                            <a href="cart.html" class="main-btn model-btn">Checkout $320</a>
                         </div>
 
                     </div>
                 </div>
             </div>
-
-            <!--Custom Menubar-->                           <!-- Cần chỉnh sửa chỗ |href| !!! -->
-            <div class="header-menubar">
-                <ul class="menubar-list">
-
-                    <!--Menu Home-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">HOME</a>
-                    </li>
-
-                    <!--Menu About Us-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">ABOUT US</a>
-                    </li>
-
-                    <!--Menu Matches-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">MATCHES</a>
-                    </li>
-
-                    <!--Menu Contacts-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
-                    </li>
-
-                    <!--Menu Blogs-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">BLOGS</a>
-                    </li>
-                </ul>
-            </div>
             
-            <!--Custom Menubar Contact-->
-            <div class="modal fade" id="header-contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <!--Custom Menubar Contact Modal-->
+            <div class="modal fade" id="contact-model-large" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="header-contact-modal-center" role="document">
-                    <div class="header-contact-modal-content">
+                    <div class="header-contact-modal-content modal-content">
                         <form action="">
 
                             <!--Contact Modal Header-->
-                            <div class="header-contact-modal-header">
-                                <h5 class="header-contact-modal-title">Contact <b>.</b></h5>
-                                <button type="close" class="btn-contact-close" data-dismiss="modal" aria-label=Close>
+                            <div class="header-contact-modal-header modal-header modal-header">
+                                <h5 class="header-contact-modal-title modal-title">Contact <b>.</b></h5>
+                                <button type="close" class="close" data-dismiss="modal" aria-label=Close>
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
 
                             <!--Contact Modal Body-->
-                            <div class="header-contact-modal-body">
-                                <div class="header-contact-modal-box">
+                            <div class="header-contact-modal-body modal-body">
+                                <div class="header-contact-modal-box contact-box">
                                     <div class="header-contact-modal-box-item">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Your Full Name">
@@ -204,8 +227,8 @@
                             </div>
 
                             <!--Contact Modal Footer-->
-                            <div class="header-contact-modal-footer">
-                                <button type="submit" class="main-btn">Send Message</button>
+                            <div class="header-contact-modal-footer modal-footer">
+                                <button type="submit" class="main-btn model-btn">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -221,12 +244,12 @@
                 <div class="body-banner-container">
 
                     <!--Back To Top-->
-                    <div class="body-banner-container-back-to-top">
+                    <div class="body-banner-container-back-to-top backtotop">
                         <a href="#banner"><i class="fa-solid fa-angle-up" aria-hidden="true"></i></a>
                     </div>
 
                     <!--Follow us-->
-                    <div class="body-container-follow-us">
+                    <div class="body-container-follow-us follow-us">
                         <span>Follow us</span>
                         <a href="#"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
@@ -235,28 +258,32 @@
                     </div>
 
                     <!--Image Arrow-->
-                    <div class="body-container-banner-arrow">
-                        <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
-                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                    <div class="body-container-banner-arrow banner-arrow">
+                        <i class="fa-solid fa-angle-left arrow-al" aria-hidden="true"></i>
+                        <i class="fa-solid fa-angle-right arrow-ar" aria-hidden="true"></i>
                     </div>
 
                     <!--Image-->
                     <div class="body-banner-container-slide">
-                        <div class="body-banner-container-slide-img">
+                        <div class="body-banner-container-slide-img banner-img">
                             <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/banner.png" alt="" class="img-fluid">
-                            <a href="https://www.youtube.com/watch?v=ClUFJlGBuME" class="vid-fluid venobox" data-autoplay="true" data-vbtype="video"><i class="fa-solid fa-circle-play" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/watch?v=ClUFJlGBuME" class="vid-btn venobox" data-autoplay="true" data-vbtype="video"><i class="fa-solid fa-circle-play" aria-hidden="true"></i></a>
                         </div>
-                        <div class="body-banner-container-slide-content-1">
-                            <h2>Gaming</h2>
-                            <h2>Community</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae minima earum odit iure.</p>
-                            <a href="login.html" class="main-btn"">Join Community</a>
-                        </div>
-                        <div class="body-banner-container-slide-content-2">
-                            <h2>Gaming</h2>
-                            <h2>Online Shop</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae minima earum odit iure.</p>
-                            <a href="login.html" class="main-btn">Join Community</a>
+                        <div class="body-banner-container-slide-text banner-txt">
+                            <div class="banner-main"></div>
+                                <div class="body-banner-container-slide-content-1 banner-item">
+                                    <h3>Gaming</h3>
+                                    <h3>Community</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae minima earum odit iure.</p>
+                                    <a href="login.html" class="main-btn"">Join Community</a>
+                                </div>
+                                <div class="body-banner-container-slide-content-2 banner-item">
+                                    <h3>Gaming</h3>
+                                    <h3>Online Shop</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae minima earum odit iure.</p>
+                                    <a href="login.html" class="main-btn">Join Community</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,11 +291,13 @@
 
             <!--GameS Collection-->
             <section class="body-game" id="games">
-                <div class="body-game-container">
+                <div class="body-game-container game-line">
+                    <div class="gl-one gl"></div>
+                    <div class="gl-two gl"></div>
 
                     <!--Content-->
-                    <div class="body-game-container-content">
-                        <div class="body-game-container-content-item">
+                    <div class="body-game-container-content game-pa">
+                        <div class="body-game-container-content-item game-box">
                             <span>Today's</span>
                             <h3>Games Collection</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, dolores.</p>
@@ -277,76 +306,78 @@
                     </div>
 
                     <div class="body-game-container-game">
+                        <div class="game-main">
 
-                        <!--Battles Zone-->
-                        <div class="body-game-container-game-item">
-                            <div class="body-game-container-game-item-img">
-                                <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game2.jpg" alt="" class="img-fluid">
-                                <div class="lightbox-game">
-                                    <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game2.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                            <!--Battles Zone-->
+                            <div class="body-game-container-game-item game-item">
+                                <div class="body-game-container-game-item-img game-img">
+                                    <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game2.jpg" alt="" class="img-fluid">
+                                    <div class="lightbox-overlay">
+                                        <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game2.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <a href="#">Battles Zones</a>
+                                <div class="star">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#">Battles Zones</a>
-                            <div class="star">
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
 
-                        <!--Survival Land-->
-                        <div class="body-game-container-game-item">
-                            <div class="body-game-container-game-item-img">
-                                <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game1.jpg" alt="" class="img-fluid">
-                                <div class="lightbox-game">
-                                    <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game1.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                            <!--Survival Land-->
+                            <div class="body-game-container-game-item game-item">
+                                <div class="body-game-container-game-item-img game-img">
+                                    <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game1.jpg" alt="" class="img-fluid">
+                                    <div class="lightbox-overlay">
+                                        <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game1.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <a href="#">Survival Land</a>
+                                <div class="star">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#">Survival Land</a>
-                            <div class="star">
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
 
-                        <!--Zombie World-->
-                        <div class="body-game-container-game-item">
-                            <div class="body-game-container-game-item-img">
-                                <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game3.jpg" alt="" class="img-fluid">
-                                <div class="lightbox-game">
-                                    <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game3.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                            <!--Zombie World-->
+                            <div class="body-game-container-game-item game-item">
+                                <div class="body-game-container-game-item-img game-img">
+                                    <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game3.jpg" alt="" class="img-fluid">
+                                    <div class="lightbox-overlay">
+                                        <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game3.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <a href="#">Zombie World</a>
+                                <div class="star">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#">Zombie World</a>
-                            <div class="star">
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
 
-                        <!--Double Dragon-->
-                        <div class="body-game-container-game-item">
-                            <div class="body-game-container-game-item-img">
-                                <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game4.jpg" alt="" class="img-fluid">
-                                <div class="lightbox-game">
-                                    <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game4.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                            <!--Double Dragon-->
+                            <div class="body-game-container-game-item game-item">
+                                <div class="body-game-container-game-item-img game-img">
+                                    <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game4.jpg" alt="" class="img-fluid">
+                                    <div class="lightbox-overlay">
+                                        <a href="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/game4.jpg" data-lightbox="roadtrip" data-title="Gallery"><i class="fa-solid fa-plus" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <a href="#">Double Dragon</a>
-                            <div class="star">
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <a href="#">Double Dragon</a>
+                                <div class="star">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,21 +389,21 @@
                 <div class="body-about-container">
 
                     <!--Title-->
-                    <div class="body-about-container-title">
-                        <h2>About</h2>
+                    <div class="body-about-container-title heading">
+                        <h3>About</h3>
                     </div>
 
                     <!--Content-->
-                    <div class="body-about-container-content">
-                        <div class="body-about-container-content-img">
-                            <div class="body-about-container-content-img-item">
-                                <h2 class="counter" data-counterup-time="2000" data-counterup-delay="30" data-counterup-beginat="1">12</h2>
+                    <div class="body-about-container-content about-pt">
+                        <div class="body-about-container-content-img about-img">
+                            <div class="body-about-container-content-img-item about-txt-overlay">
+                                <h3 class="counter" data-counterup-time="2000" data-counterup-delay="30" data-counterup-beginat="1">12</h3>
                                 <span>Years of Leading</span>
                             </div>
                             <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/about.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="body-about-container-content-text">
-                            <div class="body-about-container-content-text-item">
+                            <div class="body-about-container-content-text-item about-txt">
                                 <span>GAMIX</span>
                                 <h3>A PLACE FOR PROFESSIONAL GAMERS FOR eSPORTS TOURNAMENT WORLDWIDE<b>.</b></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptatem deserunt ipsam culpa, obcaecati unde quo dignissimos cum ut rem? Fuga commodi, cumque voluptate. Cupiditate.</p>
@@ -390,7 +421,7 @@
                     
                     <!--Community Earning-->
                     <div class="body-counter-container-content">
-                        <div class="body-counter-container-item">
+                        <div class="body-counter-container-item counter-item">
                             <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30" data-counterup-beginat="20">105</h3>
                             <span>K<b>.</b></span>
                             <p>Community Earning</p>
@@ -399,7 +430,7 @@
 
                     <!--Registered Players-->
                     <div class="body-counter-container-content">
-                        <div class="body-counter-container-item">
+                        <div class="body-counter-container-item counter-item">
                             <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30" data-counterup-beginat="20">100</h3>
                             <span>K<b>.</b></span>
                             <p>Registered Players</p>
@@ -408,7 +439,7 @@
 
                     <!--Streams Complete-->
                     <div class="body-counter-container-content">
-                        <div class="body-counter-container-item">
+                        <div class="body-counter-container-item counter-item">
                             <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30" data-counterup-beginat="20">221</h3>
                             <span>K<b>.</b></span>
                             <p>Streams Complete</p>
@@ -417,7 +448,7 @@
 
                     <!--Total Sponsers-->
                     <div class="body-counter-container-content">
-                        <div class="body-counter-container-item">
+                        <div class="body-counter-container-item counter-item">
                             <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30" data-counterup-beginat="20">875</h3>
                             <span>K<b>.</b></span>
                             <p>Total Sponsers</p>
@@ -431,64 +462,73 @@
                 <div class="body-match-container">
 
                     <!--Title-->
-                    <div class="body-match-container-title">
-                        <h2>MATCHES</h2>
+                    <div class="body-match-container-title heading">
+                        <h3>MATCHES</h3>
                     </div>
 
                     <!--Content 01-->
-                    <div class="body-match-container-content-1">
+                    <div class="body-match-container-content-1 match-pa">
+                        <div class="match-main">
 
-                        <!--A1 eSports Team-->
-                        <div class="body-match-container-content-1-item">
-                            <div class="body-match-container-content-1-item-logo">
-                                <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/g1.png" alt="">
-                            </div>
-                            <div class="body-match-container-content-1-item-content">
-                                <div class="body-match-container-content-1-item-title">
-                                    <h3>A1 eSports Team</h3>
+                            <!--A1 eSports Team-->
+                            <div class="body-match-container-content-1-item">
+                                <div class="live-match-item">
+                                    <div class="body-match-container-content-1-item-logo match-logo">
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/g1.png" alt="">
+                                    </div>
+                                    <div class="body-match-container-content-1-item-content match-text">
+                                        <div class="body-match-container-content-1-item-title">
+                                            <h3>A1 eSports Team</h3>
+                                        </div>
+                                        <div class="body-match-container-content-1-item-text-right">
+                                            <h3>30</h3>
+                                        </div>
+                                    </div>
+                                    <div class="body-match-container-content-1-item-content match-text">
+                                        <div class="body-match-container-content-1-item-title lose">
+                                            <h3>Future Station</h3>
+                                        </div>
+                                        <div class="body-match-container-content-1-item-text-right lose">
+                                            <h3>25</h3>
+                                        </div>
+                                    </div>
+                                    <div class="body-match-container-content-1-item-live">
+                                        <div class="match-action">
+                                            <a href="#" class="match-btn">Live <i class="fa-solid fa-circle" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="body-match-container-content-1-item-text-right">
-                                    <h3>30</h3>
-                                </div>
                             </div>
-                            <div class="body-match-container-content-1-item-content">
-                                <div class="body-match-container-content-1-item-title-second">
-                                    <h3>Future Station</h3>
-                                </div>
-                                <div class="body-match-container-content-1-item-text-right-second">
-                                    <h3>25</h3>
-                                </div>
-                            </div>
-                            <div class="body-match-container-content-1-item-live">
-                                <a href="#" class="match-btn">Live <i class="fa-solid fa-circle" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
 
-                        <!--Four Angry Man-->
-                        <div class="body-match-container-content-1-item">
-                            <div class="body-match-container-content-1-item-logo">
-                                <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/g2.png" alt="">
-                            </div>
-                            <div class="body-match-container-content-1-item-content">
-                                <div class="body-match-container-content-1-item-title">
-                                    <h3>Four Angry Man</h3>
+                            <!--Four Angry Man-->
+                            <div class="body-match-container-content-1-item">
+                                <div class="live-match-item">
+                                    <div class="body-match-container-content-1-item-logo match-logo">
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/g2.png" alt="">
+                                    </div>
+                                    <div class="body-match-container-content-1-item-content match-text">
+                                        <div class="body-match-container-content-1-item-title">
+                                            <h3>Four Angry Man</h3>
+                                        </div>
+                                        <div class="body-match-container-content-1-item-text-right">
+                                            <h3>44</h3>
+                                        </div>
+                                    </div>
+                                    <div class="body-match-container-content-1-item-content match-text">
+                                        <div class="body-match-container-content-1-item-title lose">
+                                            <h3>Ninja Gaming</h3>
+                                        </div>
+                                        <div class="body-match-container-content-1-item-text-right lose">
+                                            <h3>35</h3>
+                                        </div>
+                                    </div>
+                                    <div class="body-match-container-content-1-item-live">
+                                        <div class="match-action">
+                                            <a href="#" class="match-btn">Live <i class="fa-solid fa-circle" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="body-match-container-content-1-item-text-right">
-                                    <h3>44</h3>
-                                </div>
                             </div>
-                            <div class="body-match-container-content-1-item-content">
-                                <div class="body-match-container-content-1-item-title-second">
-                                    <h3>Ninja Gaming</h3>
-                                </div>
-                                <div class="body-match-container-content-1-item-text-right-second">
-                                    <h3>35</h3>
-                                </div>
-                            </div>
-                            <div class="body-match-container-content-1-item-live">
-                                <a href="#" class="match-btn">Live <i class="fa-solid fa-circle" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
 
                         <!--Alpa Xtreme-->
                         <div class="body-match-container-content-1-item">
