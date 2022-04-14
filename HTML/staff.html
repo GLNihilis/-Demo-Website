@@ -7,9 +7,9 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Staff</title>
-    <link rel="stylesheet" href="/BTL-Group-9/CSS/administrators-style.css">
-    <link rel="stylesheet" href="/BTL-Group-9/CSS/admin-style.css">
-    <link rel="stylesheet" href="/BTL-Group-9/CSS/boostrap.css">
+    <link rel="stylesheet" href="/CSS/administrators-style.css">
+    <link rel="stylesheet" href="/CSS/admin-style.css">
+    <link rel="stylesheet" href="/CSS/boostrap.css">
 </head>
 <body>
     <div class="sidebar">
@@ -58,7 +58,7 @@
         </ul>
     </div>
     <div class="wrapper">
-        <h1 class="text-center">Staff</h1>
+        <h1 class="text-center">Admin page</h1>
         <from onsubmit="creat_user()" name="userFrom">
             <div class="from-group">
                 <input type="text" class="from-control" name="id" autocomplete="off" placeholder="Id"> <!-- autocomplete là thuộc tính cho phép gợi ý thông tin nhập trước đó !--> <!-- disabled dùng để vô hiệu hoá giá trị nhập !-->
@@ -81,7 +81,6 @@
                 <th>Username</th>
                 <th>Password</th>
                 <th>Phone</th>
-                <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </thead>
@@ -103,11 +102,12 @@
                     </span>
                 </td>
             </tr>
+            " "
         </tbody>
     </table>
 
 
-    <script src="/BTL-Group-9/JS/adminscript.js"></script>
-    <script src="/BTL-Group-9/JS/customerscript.js"></script>
+    <script src="/JS/adminscript.js"></script>
+    <script src="/JS/customerscript.js"></script>
 </body>
 </html>
