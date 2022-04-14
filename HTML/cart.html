@@ -10,141 +10,168 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/BTL-Group-9/CSS/bootstrap.css">
+    <link rel="stylesheet" href="/BTL-Group-9/CSS/venobox.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/HomeWork/BTL/CSS/cart.css">
+    <link rel="stylesheet" href="/BTL-Group-9/CSS/cart.css">
+    <link rel="stylesheet" href="/BTL-Group-9/CSS/responsive.css">
 </head>
-<body>
+<body id="darkmode" class="inner page">
     <!--All-->
     <div class="all" id="container-all">
 
         <!--Preloader-->
-        <div class="loader-screen" id="preloader">
-            <svg viewBox="0 0 80 80">
-                <rect x="8" y="8" width="64" height="64"></rect>
-            </svg>
+        <div class="loader-screen preloader" id="preloader">
+            <div class="loader-box">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
+                </svg>
+            </div>
         </div>
 
         <!--**************Header Area**************-->
         <div class="web-header" id="container-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+                <div class="header-container container">
 
-            <!--Logo-->
-            <div class="header-logo">
-                <a href="index.html" class="header-logo-link">GAMIX
-                    <span>.</span>
-                </a>
-            </div>
+                    <!--Logo-->
+                    <a href="index.html" class="header-logo-link navbar-brand">GAMIX<span>.</span></a>
 
-            <!--Navigation-->
-            <div class="header-nav">
-                <ul class="header-nav-list">
+                    <!--Navigation-->
+                    <div class="header-nav">
+                        <ul class="header-nav-list navbar-nav ml-auto menu-item">
 
-                    <!--Search-->                                   <!-- !!! -->
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link-search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                        <div class="menu-search">
-                            <button type="button" class="btn-search-close">x</button>
-                            <form action="">
-                                <input type="search" placeholder="Search Here" value=""/>
-                                <button type="submit" class="main-btn">Search</button>
-                            </form>
-                        </div>
-                    </li>
+                            <!--Search-->
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link-search nav-link abc nl-m-top mobile-content-hide">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                                <div class="search top-search">
+                                    <button type="button" class="close fix-close">x</button>
+                                    <form action="">
+                                        <input type="search" placeholder="Search Here" value=""/>
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </li>
 
-                    <!--Shopping Bag-->
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link-shopping-bag" data-toggle="modal" data-target="#header-shopping-bag-modal">
-                            <i class="fas fa-shopping-bag" aria-hidden="true">
-                                <span>2</span>
-                            </i>
-                        </a>
-                    </li>
+                            <!--Shopping Bag-->
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link-shopping-bag nav-link cart nl-m-top mobile-content-hide" data-toggle="modal" data-target="#header-shopping-bag-modal">
+                                    <i class="fas fa-shopping-bag" aria-hidden="true">
+                                        <span>2</span>
+                                    </i>
+                                </a>
+                            </li>
 
-                    <!--Login-->
-                    <li class="header-nav-item">
-                        <a href="login.html" class="header-nav-item-link-login">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </a>
-                    </li>
+                            <!--Login-->
+                            <li class="header-nav-item">
+                                <a href="login.html" class="header-nav-item-link-login nav-link nl-m-top account-icon">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                </a>
+                            </li>
 
-                    <!--Menu-->
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link-menu">
-                            <i class="fas fa-bars" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                            <!--Menu-->
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link-menu nav-link menu-icon">
+                                    <i class="fas fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
 
-            <!--Custom Menubar-->                           <!-- Cần chỉnh sửa chỗ |href| !!! -->
-            <div class="header-menubar">
-                <ul class="menubar-list">
+                <!--Custom Menubar-->
+                <div class="header-menubar custom-menubar">
+                    <ul class="menubar-list nav-link-block">
 
-                    <!--Menu Home-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">HOME</a>
-                    </li>
+                        <!--Menu Home-->
+                        <li class="header-menubar-item">
+                            <a href="index.html#banner" class="header-menubar-item-link menu-link">HOME</a>
+                        </li>
 
-                    <!--Menu About Us-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">ABOUT US</a>
-                    </li>
+                        <!--Menu About Us-->
+                        <li class="header-menubar-item">
+                            <a href="index.html#about" class="header-menubar-item-link menu-link">ABOUT US</a>
+                        </li>
 
-                    <!--Menu Matches-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">MATCHES</a>
-                    </li>
+                        <!--Menu Matches-->
+                        <li class="header-menubar-item">
+                            <a href="index.html#match" class="header-menubar-item-link menu-link">MATCHES</a>
+                        </li>
 
-                    <!--Menu Contacts-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
-                    </li>
+                        <!--Menu Contacts-->
+                        <li class="header-menubar-item">
+                            <a href="#" class="header-menubar-item-link menu-link" data-toggle="modal" data-target="#header-contact-modal">CONTACTS</a>
+                        </li>
 
-                    <!--Menu Blogs-->
-                    <li class="header-menubar-item">
-                        <a href="" class="header-menubar-item-link">BLOGS</a>
-                    </li>
-                </ul>
-            </div>
+                        <!--Menu Blogs-->
+                        <li class="header-menubar-item">
+                            <a href="index.html#blog" class="header-menubar-item-link menu-link">BLOGS</a>
+                        </li>
+                    </ul>
+
+                    <!--Responsive Navigation-->
+                    <ul class="responsive-nav">
+                        <li>
+                            <a class="nav-link nl-m-top abc"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <div class="search top-search">
+                                <button type="button" class="close fix-close">×</button>
+                                <form>
+                                    <input type="search" value="" placeholder="Search Here" />
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link cart nl-m-top" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-shopping-bag" aria-hidden="true"></i><span>2</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link nl-m-top" href="login.html"><i class="fas fa-user" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="menu-close">
+                        <a class="hide-menu-btn"><i class="fas fa-times" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </nav>
 
             <!--Custom Shopping Bag Modal-->
             <div class="modal fade" id="header-shopping-bag-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="headershopping-bag-modal-center" role="document">
-                    <div class="header-shopping-bag-modal-content">
+                <div class="headershopping-bag-modal-center modal-dialog modal-dialog-centered" role="document">
+                    <div class="header-shopping-bag-modal-content modal-content">
 
                         <!--Shopping Bag Modal Header-->
-                        <div class="header-shopping-bag-modal-header">
-                            <h5 class="header-shopping-bag-modal-title">Cart<b>.</b></h5>
-                            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                        <div class="header-shopping-bag-modal-header modal-header">
+                            <h5 class="header-shopping-bag-modal-title modal-title">Cart<b>.</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
 
                         <!--Shopping Bag Modal Body-->
-                        <div class="header-shopping-bag-modal-body">
-                            <div class="header-shopping-bag-modal-cart">
-                                <div class="header-shopping-bag-modal-cart-item">
+                        <div class="header-shopping-bag-modal-body modal-body">
+                            <div class="header-shopping-bag-modal-cart cart-item row">
+                                <div class="header-shopping-bag-modal-cart-item cart-img col-sm-4 col-lg-4">
                                     <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
                                     <a href="#"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="header-shopping-bag-modal-cart-content">
+                                <div class="header-shopping-bag-modal-cart-content col-sm-8 col-lg-8">
                                     <h3>Ober Headset</h3>
                                     <span>1 x $135</span>
                                 </div>
                             </div>
-                            <div class="header-shopping-bag-modal-cart">
-                                <div class="header-shopping-bag-modal-cart-item">
+                            <div class="header-shopping-bag-modal-cart cart-item row">
+                                <div class="header-shopping-bag-modal-cart-item cart-img col-sm-4 col-lg-4">
                                     <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product3.png" alt="" class="img-fluid">
                                     <a href="#"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="header-shopping-bag-modal-cart-content">
+                                <div class="header-shopping-bag-modal-cart-content col-sm-8 col-lg-8">
                                     <h3>Wired Earphone</h3>
                                     <span>2 x $99</span>
                                 </div>
@@ -152,42 +179,42 @@
                         </div>
 
                         <!--Shopping Bag Modal Footer-->
-                        <div class="header-shopping-bag-modal-footer">
-                            <a href="cart.html" class="main-btn">Checkout $320</a>
+                        <div class="header-shopping-bag-modal-footer modal-footer">
+                            <a href="cart.html" class="main-btn model-btn">Checkout $320</a>
                         </div>
 
                     </div>
                 </div>
             </div>
-
+            
             <!--Custom Menubar Contact Modal-->
-            <div class="modal fade" id="header-contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="header-contact-modal-center" role="document">
-                    <div class="header-contact-modal-content">
+            <div class="modal fade" id="contact-model-large" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="header-contact-modal-center modal-dialog modal-dialog-centered" role="document">
+                    <div class="header-contact-modal-content modal-content">
                         <form action="">
 
                             <!--Contact Modal Header-->
-                            <div class="header-contact-modal-header">
-                                <h5 class="header-contact-modal-title">Contact <b>.</b></h5>
-                                <button type="close" class="btn-contact-close" data-dismiss="modal" aria-label=Close>
+                            <div class="header-contact-modal-header modal-header">
+                                <h5 class="header-contact-modal-title modal-title">Contact <b>.</b></h5>
+                                <button type="close" class="close" data-dismiss="modal" aria-label=Close>
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
 
                             <!--Contact Modal Body-->
-                            <div class="header-contact-modal-body">
-                                <div class="header-contact-modal-box">
-                                    <div class="header-contact-modal-box-item">
+                            <div class="header-contact-modal-body modal-body">
+                                <div class="header-contact-modal-box contact-box row">
+                                    <div class="header-contact-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Your Full Name">
                                         </div>
                                     </div>
-                                    <div class="header-contact-modal-box-item">
+                                    <div class="header-contact-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Your Email Address">
                                         </div>
                                     </div>
-                                    <div class="header-contact-modal-box-item">
+                                    <div class="header-contact-modal-box-item col-lg-12">
                                         <div class="form-group">
                                             <textarea name="" class="form-control" id="Example_Form_Control_Text_Area" cols="30" rows="7" placeholder="Your Message"></textarea>
                                         </div>
@@ -196,8 +223,8 @@
                             </div>
 
                             <!--Contact Modal Footer-->
-                            <div class="header-contact-modal-footer">
-                                <button type="submit" class="main-btn">Send Message</button>
+                            <div class="header-contact-modal-footer modal-footer">
+                                <button type="submit" class="main-btn model-btn">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -205,48 +232,48 @@
             </div>
             
             <!--Billing Modal-->
-            <div class="modal fade" id="header-billing-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="header-billing-modal-center" role="document">
-                    <div class="header-billing-modal-content">
+            <div class="modal fade" id="billing-model-large" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="header-billing-modal-center modal-dialog modal-dialog-centered" role="document">
+                    <div class="header-billing-modal-content modal-content">
                         <form action="">
 
                             <!--Billing Modal Header-->
-                            <div class="header-billing-modal-header">
-                                <h5 class="header-billing-modal-title">Billing Details <b>.</b></h5>
-                                <button type="close" class="btn-billing-close" data-dismiss="modal" aria-label=Close>
+                            <div class="header-billing-modal-header modal-header">
+                                <h5 class="header-billing-modal-title modal-title">Billing Details <b>.</b></h5>
+                                <button type="close" class="close" data-dismiss="modal" aria-label=Close>
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
 
                             <!--Billing Modal Body-->
-                            <div class="header-billing-modal-body">
-                                <div class="header-billing-modal-box">
-                                    <div class="header-billing-modal-box-item">
+                            <div class="header-billing-modal-body modal-body">
+                                <div class="header-billing-modal-box contact-box row">
+                                    <div class="header-billing-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Your Full Name">
                                         </div>
                                     </div>
-                                    <div class="header-billing-modal-box-item">
+                                    <div class="header-billing-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Your Email Address">
                                         </div>
                                     </div>
-                                    <div class="header-billing-modal-box-item">
+                                    <div class="header-billing-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Phone Number">
                                         </div>
                                     </div>
-                                    <div class="header-billing-modal-box-item">
+                                    <div class="header-billing-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Card Number">
                                         </div>
                                     </div>
-                                    <div class="header-billing-modal-box-item">
+                                    <div class="header-billing-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Expiry Date">
                                         </div>
                                     </div>
-                                    <div class="header-billing-modal-box-item">
+                                    <div class="header-billing-modal-box-item col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Address">
                                         </div>
@@ -255,8 +282,8 @@
                             </div>
 
                             <!--Billing Modal Footer-->
-                            <div class="header-billing-modal-footer">
-                                <button type="submit" class="main-btn">Payment $298</button>
+                            <div class="header-billing-modal-footer modal-footer">
+                                <button type="submit" class="main-btn model-btn">Payment $298</button>
                             </div>
                         </form>
                     </div>
@@ -268,126 +295,168 @@
         <div class="web-body" id="container-body">
 
             <!--Image-->
-            <section class="body-image" id="image">
-                <div class="body-image-container">
-                    <h3>Cart Page</h3>
-                    <a href="index.html"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i>Home</a><span> - Cart page</span>
+            <section class="body-image" id="inner-banner">
+                <div class="body-image-container container">
+                    <div class="row">
+                        <div class="text center col-lg-12">
+                            <h3>Cart Page</h3>
+                            <a href="index.html"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i>Home</a><span> - Cart page</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!--Cart View-->
             <section class="body-cart-view" id="cart-view">
-                <div class="body-cart-view-container">
+                <div class="body-cart-view-container container">
+                    <div class="row">
 
-                    <!--Image-->
-                    <div class="body-cart-view-container-image">
-                        <div class="body-cart-view-container-image-item">
-                            <h3>$135</h3>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
-                            <h4>Ober Headset</h4>
-                            <a href="#"><i class="fa-solid fa-square-xmark" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="body-cart-view-container-image-item">
-                            <h3>$198</h3>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product3.png" alt="" class="img-fluid">
-                            <h4>Wired Earphone</h4>
-                            <a href="#"><i class="fa-solid fa-square-xmark" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <!--Contact Box-->
-                    <div class="body-cart-view-container-contact-box">
-                        <div class="body-cart-view-container-contact-box-item">
-                            <div class="body-cart-view-container-contact-box-item-1">
-                                <h3>Subtotal</h3>
-                            </div>
-                            <div class="body-cart-view-container-contact-box-item-1">
-                                <h4>$320.00</h4>
-                            </div>
-                        </div>
-                        <div class="body-cart-view-container-contact-box-item">
-                            <div class="body-cart-view-container-contact-box-item-1">
-                                <h3>Discount</h3>
-                            </div>
-                            <div class="body-cart-view-container-contact-box-item-1">
-                                <h4>10%</h4>
-                            </div>
-                        </div>
-                        <div class="body-cart-view-container-contact-box-item">
-                            <div class="body-cart-view-container-contact-box-item-1">
-                                <h3>Total</h3>
-                            </div>
-                            <div class="body-cart-view-container-contact-box-item-1">
-                                <h4>$298.00</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Form-->
-                    <div class="body-cart-view-container-form">
-                        <form action="">
-                            <div class="body-cart-view-container-form-item">
-                                <div class="body-cart-view-container-form-item">
-                                    <input type="text" class="coupon-txt" placeholder="Coupon Code">
+                        <!--Image-->
+                        <div class="body-cart-view-container-image col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="body-cart-view-container-image-item cart-items text-center">
+                                        <h3>$135</h3>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
+                                        <h4>Ober Headset</h4>
+                                        <a href="#"><i class="fa-solid fa-square-xmark" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
-                                <div class="body-cart-view-container-form-item">
-                                    <button type="submit" class="coupon-btn">Apply</button>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="body-cart-view-container-image-item cart-items text-center">
+                                        <h3>$198</h3>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product3.png" alt="" class="img-fluid">
+                                        <h4>Wired Earphone</h4>
+                                        <a href="#"><i class="fa-solid fa-square-xmark" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-lg-1"></div>
+
+                        <!--Contact Box-->
+                        <div class="body-cart-view-container-contact-box col-lg-5 contact-box">
+                            <div class="body-cart-view-container-contact-box-checkout-box checkout-box">
+                                <div class="row">
+                                    <div class="body-cart-view-container-contact-box-item checkout-item col-lg-12">
+                                        <div class="row">
+                                            <div class="body-cart-view-container-contact-box-item-1 col-8 col-lg-8 col-sm-8">
+                                                <h3>Subtotal</h3>
+                                            </div>
+                                            <div class="body-cart-view-container-contact-box-item-1 col-4 col-lg-4 col-sm-4 text-right">
+                                                <h4>$320.00</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body-cart-view-container-contact-box-item checkout-item col-lg-12">
+                                        <div class="row">
+                                            <div class="body-cart-view-container-contact-box-item-1 col-8 col-lg-8 col-sm-8">
+                                                <h3>Discount</h3>
+                                            </div>
+                                            <div class="body-cart-view-container-contact-box-item-1 col-4 col-lg-4 col-sm-4 text-right">
+                                                <h4>10%</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body-cart-view-container-contact-box-item checkout-item col-lg-12">
+                                        <div class="row">
+                                            <div class="body-cart-view-container-contact-box-item-1 col-8 col-lg-8 col-sm-8">
+                                                <h3>Total</h3>
+                                            </div>
+                                            <div class="body-cart-view-container-contact-box-item-1 col-4 col-lg-4 col-sm-4 text-right">
+                                                <h4>$298.00</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body-cart-view-container-contact-box-item checkout-button col-lg-12">
+                                        <a href="main-btn btn-c-white" data-toggle="modal" data-target="#billing-model-large">Make Payment</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Form-->
+                            <form action="">
+                                <div class="body-cart-view-container-form form-group">
+                                    <div class="body-cart-view-container-form-container row">
+                                        <div class="body-cart-view-container-form-item col-lg-8">
+                                            <input type="text" class="form-control" placeholder="Coupon Code">
+                                        </div>
+                                        <div class="body-cart-view-container-form-item col-lg-4">
+                                            <button type="submit" class="coupon-btn btn btn-primary">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--Product-->
             <section class="body-product" id="product">
-                <div class="body-product-container">
+                <div class="body-product-container container">
 
                     <!--Title-->
-                    <div class="body-product-container-title">
-                        <h2>Related</h2>
+                    <div class="row">
+                        <div class="body-product-container-title col-lg-12 heading">
+                            <h3>Related</h3>
+                        </div>
                     </div>
 
                     <!--Slides-->
-                    <div class="body-product-container-slider">
-                        <div class="body-product-container-slider-item">
-                            <h3>$135</h3>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
-                            <h4>Ober headset</h4>
-                            <a href="" class="product-btn">Add to Cart</a>
-                        </div>
-                        <div class="body-product-container-slider-item">
-                            <h3>$240</h3>
-                            <div class="sale">
-                                <span>Sale</span>
+                    <div class="body-product-container-slider product-pa row">
+                        <div class="row col-lg-12">
+                            <div class="product-main">
+                                <div class="body-product-container-slider-item text-center col-lg-3">
+                                    <div class="body-product-container-slider-item product-item">
+                                        <h3>$135</h3>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
+                                        <h4>Ober headset</h4>
+                                        <a href="" class="product-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="body-product-container-slider-item text-center col-lg-3">
+                                    <div class="body-product-container-slider-item product-item">
+                                        <h3>$240</h3>
+                                        <div class="sale">
+                                            <span>Sale</span>
+                                        </div>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product2.png" alt="" class="img-fluid">
+                                        <h4>D-Link Webcam</h4>
+                                        <a href="" class="product-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="body-product-container-slider-item text-center col-lg-3">
+                                    <div class="body-product-container-slider-item product-item">
+                                        <h3>$135</h3>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
+                                        <h4>Ober headset</h4>
+                                        <a href="" class="product-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="body-product-container-slider-item text-center col-lg-3">
+                                    <div class="body-product-container-slider-item product-item">
+                                        <h3>$99</h3>
+                                        <div class="sale">
+                                            <span>Sale</span>
+                                        </div>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product3.png" alt="" class="img-fluid">
+                                        <h4>Wired Earphone</h4>
+                                        <a href="" class="product-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="body-product-container-slider-item text-center col-lg-3">
+                                    <div class="body-product-container-slider-item product-item">
+                                        <h3>$240</h3>
+                                        <div class="sale">
+                                            <span>Sale</span>
+                                        </div>
+                                        <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product2.png" alt="" class="img-fluid">
+                                        <h4>D-Link Webcam</h4>
+                                        <a href="" class="product-btn">Add to Cart</a>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product2.png" alt="" class="img-fluid">
-                            <h4>D-Link Webcam</h4>
-                            <a href="" class="product-btn">Add to Cart</a>
-                        </div>
-                        <div class="body-product-container-slider-item">
-                            <h3>$135</h3>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product1.png" alt="" class="img-fluid">
-                            <h4>Ober headset</h4>
-                            <a href="" class="product-btn">Add to Cart</a>
-                        </div>
-                        <div class="body-product-container-slider-item">
-                            <h3>$99</h3>
-                            <div class="sale">
-                                <span>Sale</span>
-                            </div>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product3.png" alt="" class="img-fluid">
-                            <h4>Wired Earphone</h4>
-                            <a href="" class="product-btn">Add to Cart</a>
-                        </div>
-                        <div class="body-product-container-slider-item">
-                            <h3>$240</h3>
-                            <div class="sale">
-                                <span>Sale</span>
-                            </div>
-                            <img src="https://epiktheme.com/demos/html/Gamix-Preview/demos/images/product2.png" alt="" class="img-fluid">
-                            <h4>D-Link Webcam</h4>
-                            <a href="" class="product-btn">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -395,12 +464,14 @@
 
             <!--SUBSCRIBE-->
             <section class="body-subscribe" id="subscribe">
-                <div class="body-subscribe-container">
-                    <div class="body-subscribe-container-text">
-                        <h3>Get Latest news in your inbox from Gamix Gaming Community<b>.</b></h3>
-                    </div>
-                    <div class="body-subscribe-container-btn">
-                        <a href="" class="main-btn">Subscribe Now</a>
+                <div class="body-subscribe-container zindex container">
+                    <div class="row">
+                        <div class="body-subscribe-container-text subscribe-txt col-lg-6 col-md-8">
+                            <h3>Get Latest news in your inbox from Gamix Gaming Community<b>.</b></h3>
+                        </div>
+                        <div class="body-subscribe-container-btn col-lg-6 col-md-4 text-center">
+                            <a href="" class="subscribe-btn">Subscribe Now</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -411,57 +482,65 @@
             
             <!--Footer-->
             <section id="footer">
-                <div class="footer-container">
+                <div class="footer-container container">
+                    <div class="row">
 
-                    <!--Logo-->
-                    <div class="footer-container-logo">
-                        <a href="index.html">GAMIX<b>.</b></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero officiis rem consectetur sunt cupiditate eius obcaecati, culpa, aspernatur aperiam id.</p>
-                        <div class="footer-container-logo-item">
-                            <a href="#"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                        <!--Logo-->
+                        <div class="footer-container-logo footer-logo col-lg-6">
+                            <a href="index.html">GAMIX<b>.</b></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero officiis rem consectetur sunt cupiditate eius obcaecati, culpa, aspernatur aperiam id.</p>
+                            <div class="footer-container-logo-item footer-social">
+                                <a href="#"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <!--Site Menu-->
-                    <div class="footer-container-menu">
-                        <h3>Site Menu</h3>
-                        <a href="">Home</a>
-                        <a href="">Tournaments</a>
-                        <a href="">About Us</a>
-                        <a href="">Reviews</a>
-                    </div>
+                        <!--Site Menu-->
+                        <div class="footer-container-menu footer-menu col-lg-2 col-sm-4">
+                            <h3>Site Menu</h3>
+                            <a href="">Home</a>
+                            <a href="">Tournaments</a>
+                            <a href="">About Us</a>
+                            <a href="">Reviews</a>
+                        </div>
 
-                    <!--Useful Links-->
-                    <div class="footer-container-menu">
-                        <h3>Useful Links</h3>
-                        <a href="">Create Account</a>
-                        <a href="">Subscription</a>
-                        <a href="">Affiliate</a>
-                        <a href="">Site Condition</a>
-                    </div>
+                        <!--Useful Links-->
+                        <div class="footer-container-menu footer-menu col-lg-2 col-sm-4">
+                            <h3>Useful Links</h3>
+                            <a href="">Create Account</a>
+                            <a href="">Subscription</a>
+                            <a href="">Affiliate</a>
+                            <a href="">Site Condition</a>
+                        </div>
 
-                    <!--Information-->
-                    <div class="footer-container-menu">
-                        <h3>Information</h3>
-                        <a href="">FAQ</a>
-                        <a href="">Site Maps</a>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Contact Us</a>
+                        <!--Information-->
+                        <div class="footer-container-menu footer-menu col-lg-2 col-sm-4">
+                            <h3>Information</h3>
+                            <a href="">FAQ</a>
+                            <a href="">Site Maps</a>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--Copyright-->
             <section class="footer-copyright" id="copyright">
-                <div class="footer-copyright-container">
-                    <div class="footer-copyright-container-left">
-                        <p><i class="fa-solid fa-copyright" aria-hidden="true"></i> 2021-2030 - Developed by <a href="https://epiktheme.com/">EpikTheme.</a></p>
-                    </div>
-                    <div class="footer-copyright-container-right">
-                        <p>All Rights Reserved.</p>
+                <div class="footer-copyright-container container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="footer-copyright-container-left copy-right-txt col-lg-6 col-sm-7">
+                                    <p><i class="fa-solid fa-copyright" aria-hidden="true"></i> 2021-2030 - Developed by <a href="https://epiktheme.com/">EpikTheme.</a></p>
+                                </div>
+                                <div class="footer-copyright-container-right copy-right-txt col-lg-6 col-sm-5 text-right">
+                                    <p>All Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -469,12 +548,12 @@
     </div>
 
     <!--Java Script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/BTL-Group-9/JS/jquery-3.3.1.min.js"></script>
+    <script src="/BTL-Group-9/JS/bootstrap.min.js"></script>
+    <script src="/BTL-Group-9/JS/venobox.min.js"></script>
+    <script src="/BTL-Group-9/JS/counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
-    <script src="/HomeWork/BTL/JS/script.js"></script>
+    <script src="/BTL-Group-9/JS/script.js"></script>
 </html>
