@@ -84,13 +84,13 @@ p
 
 @font-face
 {
-    src: url(/BTL-Group-9/Font/BarlowCondensed-Bold.ttf);
+    src: url(/BTL/Font/BarlowCondensed-Bold.ttf);
     font-family: bb;
 }
 
 @font-face
 {
-    src: url(/BTL-Group-9/Font/BarlowCondensed-Regular.ttf);
+    src: url(/BTL/Font/BarlowCondensed-Regular.ttf);
     font-family: br;
 }
 

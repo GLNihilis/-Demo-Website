@@ -84,13 +84,13 @@ p
 
 @font-face
 {
-    src: url(../fonts/BarlowCondensed-Bold.ttf);
+    src: url(/BTL/Font/BarlowCondensed-Bold.ttf);
     font-family: bb;
 }
 
 @font-face
 {
-    src: url(../fonts/BarlowCondensed-Regular.ttf);
+    src: url(/BTL/Font/BarlowCondensed-Regular.ttf);
     font-family: br;
 }
 
@@ -156,43 +156,148 @@ p
 
 @-webkit-keyframes pathRect
 {
-    25% {
+    25%
+    {
         stroke-dashoffset: 64;
     }
 
-    50% {
+    50%
+    {
         stroke-dashoffset: 128;
     }
 
-    75% {
+    75%
+    {
         stroke-dashoffset: 192;
     }
 
-    100% {
+    100%
+    {
         stroke-dashoffset: 256;
     }
 }
 
 @keyframes pathRect
 {
-    25% {
+    25%
+    {
         stroke-dashoffset: 64;
     }
 
-    50% {
+    50%
+    {
         stroke-dashoffset: 128;
     }
 
-    75% {
+    75%
+    {
         stroke-dashoffset: 192;
     }
 
-    100% {
+    100%
+    {
         stroke-dashoffset: 256;
     }
 }
 
-/* Sign Up */
+/* MEDIA */
+@media (max-width: 992px)
+{
+    .login-12 .none-992
+    {
+        display: none;
+    }
+
+    .login-12 .pad-0
+    {
+        padding: 0;
+    }
+
+    .login-12 .login-box-12
+    {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .login-12 .login-inner-form .details
+    {
+        padding: 30px;
+    }
+}
+
+/* version 2*/
+.particles-js-canvas-el
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+/* version 3*/
+.index3 #banner
+{
+    background: url(https://epiktheme.com/demos/html/Gamix-Preview/demos/images/banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: shrink 5s infinite alternate;
+    animation: shrink 5s infinite alternate;
+}
+
+@-webkit-keyframes shrink
+{
+    0%
+    {
+        background-size: 110% 110%;
+    }
+
+    100%
+    {
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes shrink
+{
+    0%
+    {
+        background-size: 110% 110%;
+    }
+
+    100%
+    {
+        background-size: 100% 100%;
+    }
+}
+
+.index3 #banner:after
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 25, 25, 0.9);
+}
+
+.index3 .banner-arrow,
+.index3 .follow-us,
+.index4 .banner-arrow,
+.index4 .follow-us
+{
+    z-index: 999;
+}
+
+.index3 .banner-arrow i,
+.index4 .banner-arrow i
+{
+    color: white;
+    border: 2px solid white;
+}
+
+/* Login */
 .logoss
 {
     font-size: 36px;
@@ -465,12 +570,14 @@ input[type=radio]
     float: right;
 }
 
-.login-12 .login-inner-form .form-check-input {
+.login-12 .login-inner-form .form-check-input
+{
     position: absolute;
     margin-left: 0;
 }
 
-.login-12 .login-inner-form .form-check label::before {
+.login-12 .login-inner-form .form-check label::before
+{
     content: "";
     display: inline-block;
     position: absolute;
@@ -482,23 +589,27 @@ input[type=radio]
     background-color: #fff;
 }
 
-.login-12 .login-inner-form .form-check-label {
+.login-12 .login-inner-form .form-check-label
+{
     padding-left: 25px;
     margin-bottom: 0;
     font-size: 14px;
     color: #fff;
 }
 
-.form-check {
+.form-check
+{
     padding-left: 0;
 }
 
-.login-12 .login-inner-form .checkbox-theme input[type="checkbox"]:checked + label::before {
+.login-12 .login-inner-form .checkbox-theme input[type="checkbox"]:checked + label::before
+{
     background-color: #e50914;
     border-color: #e50914;
 }
 
-.login-12 .login-inner-form input[type=checkbox]:checked + label:before {
+.login-12 .login-inner-form input[type=checkbox]:checked + label:before
+{
     font-weight: 300;
     color: #f3f3f3;
     line-height: 15px;
@@ -507,11 +618,13 @@ input[type=radio]
 }
 
 .login-12 .login-inner-form input[type=checkbox],
-input[type=radio] {
+input[type=radio]
+{
     margin-top: 4px;
 }
 
-.login-12 .login-inner-form .checkbox a {
+.login-12 .login-inner-form .checkbox a
+{
     font-size: 14px;
     color: #e50914;
     float: right;
