@@ -313,15 +313,15 @@
     });
 
     // Blog Part JS
-    $('.product-main').slick(
+    $('.blog-main').slick(
     {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         dots: false,
         arrows: false,
-        nextArrow: '.blog-arrow .arrow-ar',
-        prevArrow: '.blog-arrow .arrow-al',
+        nextArrow: '.arrow-ar',
+        prevArrow: '.arrow-al',
         autoplaySpeed: 2500,
         centerMode: true,
         centerPadding: '0px',
