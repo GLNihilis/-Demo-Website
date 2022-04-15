@@ -1,4 +1,5 @@
 /* START */
+
 * {
     margin: 0;
     padding: 0;
@@ -81,6 +82,7 @@ p {
 
 
 /* Preloader */
+
 .preloader {
     min-height: 100vh;
     position: fixed;
@@ -138,15 +140,12 @@ p {
     25% {
         stroke-dashoffset: 64;
     }
-
     50% {
         stroke-dashoffset: 128;
     }
-
     75% {
         stroke-dashoffset: 192;
     }
-
     100% {
         stroke-dashoffset: 256;
     }
@@ -156,41 +155,39 @@ p {
     25% {
         stroke-dashoffset: 64;
     }
-
     50% {
         stroke-dashoffset: 128;
     }
-
     75% {
         stroke-dashoffset: 192;
     }
-
     100% {
         stroke-dashoffset: 256;
     }
 }
 
+
 /* MEDIA */
+
 @media (max-width: 992px) {
     .login-12 .none-992 {
         display: none;
     }
-
     .login-12 .pad-0 {
         padding: 0;
     }
-
     .login-12 .login-box-12 {
         margin: 0 auto;
         max-width: 400px;
     }
-
     .login-12 .login-inner-form .details {
         padding: 30px;
     }
 }
 
+
 /* version 2*/
+
 .particles-js-canvas-el {
     position: absolute;
     width: 100%;
@@ -198,7 +195,9 @@ p {
     top: 0;
 }
 
+
 /* version 3*/
+
 .index3 #banner {
     background: url(https://epiktheme.com/demos/html/Gamix-Preview/demos/images/banner-bg.jpg);
     background-position: center;
@@ -212,7 +211,6 @@ p {
     0% {
         background-size: 110% 110%;
     }
-
     100% {
         background-size: 100% 100%;
     }
@@ -222,7 +220,6 @@ p {
     0% {
         background-size: 110% 110%;
     }
-
     100% {
         background-size: 100% 100%;
     }
@@ -251,7 +248,9 @@ p {
     border: 2px solid white;
 }
 
+
 /* Header Area */
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -333,10 +332,7 @@ p {
     margin-top: 12px;
 }
 
-.nav-bg
-
-/**/
-    {
+.nav-bg {
     background: #141414 !important;
     padding: 25px 0;
     -webkit-box-shadow: 0 31px 35px rgba(0, 0, 0, .1);
@@ -365,10 +361,7 @@ p {
     z-index: 99999999;
 }
 
-.search.open
-
-/**/
-    {
+.search.open {
     -webkit-transform: translate(0px, 0px) scale(1, 1);
     -ms-transform: translate(0px, 0px) scale(1, 1);
     transform: translate(0px, 0px) scale(1, 1);
@@ -461,7 +454,6 @@ p {
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
     transition: all linear .3s;
-
 }
 
 .custom-menubar .menu-link:hover {
@@ -495,7 +487,9 @@ p {
     right: -9px;
 }
 
+
 /* Modal */
+
 .modal {
     z-index: 99999999;
     background: rgba(20, 20, 20, 0.8);
@@ -609,14 +603,17 @@ p {
     color: white;
 }
 
+
 /* Body Area */
+
+
 /* Banner */
+
 #banner {
     padding: 220px 0 170px;
     background: #191919;
     overflow-y: hidden;
     position: relative;
-
 }
 
 .backtotop {
@@ -639,7 +636,6 @@ p {
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
     transition: all linear .3s;
-
 }
 
 .backtotop:hover {
@@ -684,7 +680,6 @@ p {
     -o-transition: all linear .3s;
     transition: all linear .3s;
     border-radius: 50px;
-
 }
 
 .main-btn:hover {
@@ -703,10 +698,7 @@ p {
     z-index: 1;
 }
 
-.banner-img:after
-
-/**/
-    {
+.banner-img:after {
     position: absolute;
     content: '';
     top: 0;
@@ -717,10 +709,7 @@ p {
     border-radius: 50%;
 }
 
-.banner-img:before
-
-/**/
-    {
+.banner-img:before {
     position: absolute;
     content: '';
     top: 0;
@@ -768,10 +757,7 @@ p {
     position: relative;
 }
 
-.follow-us span:after
-
-/**/
-    {
+.follow-us span:after {
     position: absolute;
     content: '';
     top: 50%;
@@ -823,7 +809,9 @@ p {
     color: white;
 }
 
+
 /* Games */
+
 #games {
     padding: 70px 0;
 }
@@ -832,10 +820,7 @@ p {
     position: relative;
 }
 
-.game-line:after
-
-/**/
-    {
+.game-line:after {
     position: absolute;
     content: '';
     bottom: -70px;
@@ -873,7 +858,6 @@ p {
     form {
         left: 0;
     }
-
     to {
         left: 95%;
     }
@@ -883,7 +867,6 @@ p {
     form {
         right: 0;
     }
-
     to {
         right: 95%;
     }
@@ -893,7 +876,6 @@ p {
     form {
         left: 0;
     }
-
     to {
         left: 95%;
     }
@@ -903,7 +885,6 @@ p {
     form {
         right: 0;
     }
-
     to {
         right: 95%;
     }
@@ -990,7 +971,9 @@ p {
     transform: scale(1);
 }
 
+
 /* About */
+
 #about {
     padding: 80px 0;
     position: relative;
@@ -1008,10 +991,7 @@ p {
     padding-bottom: 8px;
 }
 
-.heading h3::before
-
-/**/
-    {
+.heading h3::before {
     position: absolute;
     content: '';
     left: 0;
@@ -1078,10 +1058,7 @@ p {
     filter: grayscale(0);
 }
 
-.about-img::after
-
-/**/
-    {
+.about-img::after {
     position: absolute;
     content: '';
     width: 80px;
@@ -1118,7 +1095,9 @@ p {
     color: white;
 }
 
+
 /* Counter */
+
 #counter {
     padding: 45px 0;
 }
@@ -1162,7 +1141,9 @@ p {
     color: #787878;
 }
 
+
 /* Matches */
+
 #match {
     padding: 80px 0;
     position: relative;
@@ -1270,7 +1251,9 @@ p {
     padding-top: 24px;
 }
 
+
 /* Watch */
+
 #watch {
     padding: 40px 0;
 }
@@ -1313,7 +1296,9 @@ p {
     color: white;
 }
 
+
 /* Brand */
+
 #brand {
     padding: 70px 0;
 }
@@ -1328,7 +1313,9 @@ p {
     margin-bottom: 40px;
 }
 
+
 /* Players */
+
 #player {
     padding: 80px 0;
     background: #191919;
@@ -1367,7 +1354,6 @@ p {
 }
 
 .player-middle.slick-center .player-info,
-/**/
 .player-middle.slick-center .player-info:after {
     opacity: 1;
 }
@@ -1460,7 +1446,9 @@ p {
     opacity: 1;
 }
 
+
 /* Product */
+
 #product {
     padding: 80px 0;
     position: relative;
@@ -1496,7 +1484,6 @@ p {
     font-family: bb;
     font-size: 17px;
     text-transform: uppercase;
-
 }
 
 .product-btn:hover {
@@ -1521,7 +1508,9 @@ p {
     font-size: 18px;
 }
 
+
 /* Join */
+
 #join {
     padding: 40px 0;
 }
@@ -1534,10 +1523,7 @@ p {
     position: relative;
 }
 
-.join-pa
-
-/**/
-    {
+.join-pa {
     padding-top: 65px;
 }
 
@@ -1570,7 +1556,9 @@ p {
     bottom: -70px;
 }
 
+
 /* Blog */
+
 #blog {
     padding: 80px 0;
     position: relative;
@@ -1609,7 +1597,6 @@ p {
 }
 
 .blog-item.slick-center img,
-/**/
 .blog-item:hover img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
@@ -1640,7 +1627,9 @@ p {
     color: white;
 }
 
+
 /* Subscribe */
+
 #subscribe {
     padding: 80px 0;
     background: url(https://epiktheme.com/demos/html/Gamix-Preview/demos/images/subscribe.jpg);
@@ -1682,7 +1671,9 @@ p {
     text-transform: uppercase;
 }
 
+
 /* Footer Area */
+
 #footer {
     padding: 80px 0;
     background: #191919;
@@ -1752,7 +1743,9 @@ p {
     background: #e50914;
 }
 
+
 /* CopyRight */
+
 #copy_right {
     padding: 25px 0;
     background: #191919;
@@ -1782,5 +1775,6 @@ p {
     font-family: bb;
     color: white;
 }
+
 
 /* END */

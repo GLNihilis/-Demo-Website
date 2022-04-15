@@ -2,7 +2,6 @@ body {
     background-color: #eeeeee;
 }
 
-
 input {
     margin: 10px;
 }
@@ -10,27 +9,25 @@ input {
 button {
     margin-right: 80px;
     margin-left: 20px;
-    padding-right: 40,5%;
+    padding-right: 40, 5%;
 }
-
 
 span[onclick] {
     cursor: pointer;
     color: #000;
 }
 
-.from-group{
+.from-group {
     margin-left: 275px;
-
 }
 
-.from-control{
+.from-control {
     width: 100%;
     height: 45px;
     margin-bottom: 15px;
 }
 
-.justify-content-center{
+.justify-content-center {
     padding: 15px;
 }
 
