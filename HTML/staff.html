@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="/CSS/admin-style.css">
     <link rel="stylesheet" href="/CSS/boostrap.css">
 </head>
+
 <body>
     <div class="sidebar">
         <div class="logo_content">
@@ -19,9 +21,9 @@
                     Dashwork
                 </h3>
             </div>
-                <div class="btn-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <div class="btn-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
         </div>
 
         <ul class="nav">
@@ -32,10 +34,10 @@
                 </a>
             </li>
             <li>
-              <a href="admin.html">
-                <i class="fa-solid fa-user"></i>
-                <span>Admin</span>
-              </a>
+                <a href="admin.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Admin</span>
+                </a>
             </li>
             <li>
                 <a href="customers.html">
@@ -61,8 +63,11 @@
         <h1 class="text-center">Admin page</h1>
         <from onsubmit="creat_user()" name="userFrom">
             <div class="from-group">
-                <input type="text" class="from-control" name="id" autocomplete="off" placeholder="Id"> <!-- autocomplete là thuộc tính cho phép gợi ý thông tin nhập trước đó !--> <!-- disabled dùng để vô hiệu hoá giá trị nhập !-->
-                <input type="text" class="from-control" name="userName" placeholder="userName" autocomplete="off" > <!-- placeholder là thuộc tính gợi ý ngắn cho các hoạt động như email văn bản,...-->
+                <input type="text" class="from-control" name="id" autocomplete="off" placeholder="Id">
+                <!-- autocomplete là thuộc tính cho phép gợi ý thông tin nhập trước đó !-->
+                <!-- disabled dùng để vô hiệu hoá giá trị nhập !-->
+                <input type="text" class="from-control" name="userName" placeholder="userName" autocomplete="off">
+                <!-- placeholder là thuộc tính gợi ý ngắn cho các hoạt động như email văn bản,...-->
                 <input type="text" class="form-control" name="password" placeholder="password" autocomplete="off">
                 <input type="tel" class="form-control" name="phone" placeholder="phone" autocomplete="off">
                 <div class="justify-content-center">
@@ -95,12 +100,12 @@
                         <i class="fas fa-edit" aria-hidden="true"></i></td>
                         <span></span>
                     </sapn>
-                <td>
-                    <span onclick="delete_user(this)">
+                    <td>
+                        <span onclick="delete_user(this)">
                         <i class="fas fa-trash" aria-hidden="true"></i>
                         <span></span>
-                    </span>
-                </td>
+                        </span>
+                    </td>
             </tr>
             " "
         </tbody>
@@ -110,4 +115,5 @@
     <script src="/JS/adminscript.js"></script>
     <script src="/JS/customerscript.js"></script>
 </body>
+
 </html>
