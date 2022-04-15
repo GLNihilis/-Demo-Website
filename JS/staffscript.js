@@ -5,7 +5,7 @@ const table = document.querySelector('.table')
 
 btn_toggle.addEventListener("click", () => {
     sidebar.classList.toggle("active");
-    if(sidebar.classList.contains('active')) {
+    if (sidebar.classList.contains('active')) {
         logo.setAttribute("style", "display: flex");
         table.setAttribute("style", "left: 240px; width: calc (100% - 240px)")
         return
@@ -16,7 +16,7 @@ btn_toggle.addEventListener("click", () => {
 id = localStorage.length;
 userForm.id.value = id;
 
-function delete_user(obj){
+function delete_user(obj) {
     row = obj.parentElement.parentElement;
     id = row.firstElementChild.innerHTML;
     localStorage.removeItem(id);
@@ -27,13 +27,13 @@ function edit_user(obj) {
     row = obj.parentElement.parentElement.children;
     userForm.id.value = row[0].innerHTML;
     userForm.username.value = row[1].innerHTML;
-    userForm,phone.value = row[2],innerHTML;
+    userForm, phone.value = row[2], innerHTML;
     userForm.password.value = row[3].innerHTML;
 }
 
 function update_user() {
-var id = userForm.id.value;
-var username = userForm.username.value;
+    var id = userForm.id.value;
+    var username = userForm.username.value;
     var password = userForm.password.value;
     var phone = userForm.phone.value;
     user = {
@@ -45,7 +45,8 @@ var username = userForm.username.value;
     localStorage.setItem(id, JSON.stringify(user));
     read_data();
 }
-function delete_all(){
+
+function delete_all() {
     localStorage.clear();
     read_data();
 }
@@ -114,8 +115,8 @@ function read_data() {
         cell1.innerHTML = user_data.username;
         cell3.innerHTML = user_data.phone;
         cell4.innerHTML = user_data.password;
-    cell5.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
-    cell6.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
+        cell5.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
+        cell6.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
 
     }
 }

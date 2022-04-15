@@ -5,7 +5,7 @@ const wrapper = document.querySelector('.wrapper')
 
 btn_toggle.addEventListener("click", () => {
     sidebar.classList.toggle("active");
-    if(sidebar.classList.contains('active')) {
+    if (sidebar.classList.contains('active')) {
         logo.setAttribute("style", "display: flex");
         return
     }
@@ -14,7 +14,7 @@ btn_toggle.addEventListener("click", () => {
 id = localStorage.length;
 userForm.id.value = id;
 
-function delete_user(obj){
+function delete_user(obj) {
     row = obj.parentElement.parentElement;
     id = row.firstElementChild.innerHTML;
     localStorage.removeItem(id);
@@ -30,8 +30,8 @@ function edit_user(obj) {
 }
 
 function update_user() {
-var id = userForm.id.value;
-var username = userForm.username.value;
+    var id = userForm.id.value;
+    var username = userForm.username.value;
     var email = userForm.email.value;
     var password = userForm.password.value;
     user = {
@@ -43,7 +43,8 @@ var username = userForm.username.value;
     localStorage.setItem(id, JSON.stringify(user));
     read_data();
 }
-function delete_all(){
+
+function delete_all() {
     localStorage.clear();
     read_data();
 }
@@ -111,12 +112,11 @@ function read_data() {
         cell1.innerHTML = user_data.username;
         cell2.innerHTML = user_data.email;
         cell3.innerHTML = user_data.password;
-    cell4.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
-    cell5.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
+        cell4.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
+        cell5.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
 
     }
 
 
 
 }
-
