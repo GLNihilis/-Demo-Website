@@ -71,12 +71,12 @@ p {
 }
 
 @font-face {
-    src: url(/BTL/Font/BarlowCondensed-Bold.ttf);
+    src: url(/Font/BarlowCondensed-Bold.ttf);
     font-family: bb;
 }
 
 @font-face {
-    src: url(/BTL/Font/BarlowCondensed-Regular.ttf);
+    src: url(/Font/BarlowCondensed-Regular.ttf);
     font-family: br;
 }
 
@@ -447,12 +447,10 @@ p {
 }
 
 .custom-menubar .menu-link {
-    font-size: 49px;
+    font-size: 30px;
     font-family: bb;
     color: white;
     text-transform: uppercase;
-    -webkit-transition: all linear .3s;
-    -o-transition: all linear .3s;
     transition: all linear .3s;
 }
 
@@ -745,8 +743,11 @@ p {
 
 .follow-us {
     position: absolute;
-    left: -100px;
-    top: 50%;
+    left: -9%;
+    /* min-width: 992px; */
+    /* max-width: 1191px; */
+    top: 60%;
+    transform: translateY(-50%) rotate(90deg);
 }
 
 .follow-us span {
