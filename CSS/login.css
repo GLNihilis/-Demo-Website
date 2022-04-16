@@ -37,10 +37,6 @@ img {
     z-index: 999;
 }
 
-.clr {
-    clear: both;
-}
-
 .vbox-overlay {
     z-index: 999999;
 }
@@ -165,89 +161,6 @@ p {
         stroke-dashoffset: 256;
     }
 }
-
-
-/* MEDIA */
-
-@media (max-width: 992px) {
-    .login-12 .none-992 {
-        display: none;
-    }
-    .login-12 .pad-0 {
-        padding: 0;
-    }
-    .login-12 .login-box-12 {
-        margin: 0 auto;
-        max-width: 400px;
-    }
-    .login-12 .login-inner-form .details {
-        padding: 30px;
-    }
-}
-
-
-/* version 2*/
-
-.particles-js-canvas-el {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}
-
-
-/* version 3*/
-
-.index3 #banner {
-    background: url(https://epiktheme.com/demos/html/Gamix-Preview/demos/images/banner-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-animation: shrink 5s infinite alternate;
-    animation: shrink 5s infinite alternate;
-}
-
-@-webkit-keyframes shrink {
-    0% {
-        background-size: 110% 110%;
-    }
-    100% {
-        background-size: 100% 100%;
-    }
-}
-
-@keyframes shrink {
-    0% {
-        background-size: 110% 110%;
-    }
-    100% {
-        background-size: 100% 100%;
-    }
-}
-
-.index3 #banner:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(25, 25, 25, 0.9);
-}
-
-.index3 .banner-arrow,
-.index3 .follow-us,
-.index4 .banner-arrow,
-.index4 .follow-us {
-    z-index: 999;
-}
-
-.index3 .banner-arrow i,
-.index4 .banner-arrow i {
-    color: white;
-    border: 2px solid white;
-}
-
 
 /* Login */
 
